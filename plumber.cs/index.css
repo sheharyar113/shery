@@ -1,0 +1,436 @@
+/* Custom styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.custom-header {
+    background-color: #443627;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+.btn-warning {
+    margin-left: 15px;
+}
+.home{
+    background-color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('mechanical-wrench-desk-with-copy-space_23-2148557961.avif');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    color: black;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-custom {
+    background-color: #ffc107;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #e0a800;
+}
+
+/* About Section */
+.code {
+    background-color: #FDFAF6;
+    padding: 80px 0;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-top: 20px;
+}
+
+.about p {
+    padding-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.second{
+    padding: 10px;
+    font-size: 20px;
+    background-color:black ;
+}
+.second:hover{
+ transform: scale(1.05);
+ background-color: transparent;
+ color:black;
+}
+
+/* Slide-in Animations */
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 1.5s ease-out 0.5s;
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .code .row {
+        flex-direction: column;
+    }
+
+    .code img {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* How It Works Section */
+.how-it-works-section {
+    background-image: url('sanitary.avif');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.card {
+    border: hidden !important;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    color: #222831;
+}
+
+.card-title, .card-text {
+    color: #000;
+}
+.card {
+    position: relative;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+  .card img {
+    transition: transform 0.3s;
+  }
+  .card:hover img {
+    transform: scale(1.1);
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .card:hover::after {
+    opacity: 1;
+  }
+  
+  
+  
+
+/* Services Section */
+.services-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.services-section .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.services-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+.services-section .card-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #222831; /* Dark text color */
+    transition: color 0.3s ease;
+}
+
+.services-section .card:hover .card-title {
+    color: #007bff; /* Blue text color on hover */
+}
+
+.services-section .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.services-section .card:hover .card-text {
+    color: #333; /* Darker text color on hover */
+}
+
+.services-section .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.services-section .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Icon Hover Effect */
+.services-section .card i {
+    color: #007bff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.services-section .card:hover i {
+    color: #0056b3;
+    transform: scale(1.2); /* Enlarge the icon on hover */
+}
+/* Services Section Animation */
+.services-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Rest of the CSS (same as before) */
+/* Testimonials Section */
+.testimonials-section {
+    background: linear-gradient(135deg, #f0f8ff, #d1e9ff);
+    padding: 80px 0;
+}
+
+.testimonial-card {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.testimonial-card .card-body {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.testimonial-card .card-title {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .card-text {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #343a40;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ffc107;
+}
+
+.footer-section .btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #343a40;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section .btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Social Media Icons */
+.footer-section .bi {
+    transition: all 0.3s ease;
+}
+
+.footer-section .bi-facebook:hover {
+    color: #1877f2 !important;
+    transform: scale(1.2);
+}
+
+.footer-section .bi-twitter:hover {
+    color: #1da1f2 !important;
+    transform: scale(1.2);
+}
+
+.footer-section .bi-instagram:hover {
+    color: #e4405f !important;
+    transform: scale(1.2);
+}
+
+.footer-section .bi-linkedin:hover {
+    color: #0a66c2 !important;
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.faq-button {
+    position: fixed;
+   right: 10px;
+    bottom: 50px;
+    background-color: #ffc107;
+    border: none;
+    color: black;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.faq-button:hover {
+    background-color: #e0a800;
+}
+

@@ -1,0 +1,27 @@
+.head{
+    background-color: #443627;
+}
+.head h1{
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.img{
+    padding-right: 200px;
+}
+.team h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.team{
+    padding-right: 200px;
+}
+.team p{
+    font-size: 20px;
+}
+.contact{
+    background-color: rgb(116, 81, 45);
+}
+.footer{
+    background-color: rgb(146, 88, 33);
+}
